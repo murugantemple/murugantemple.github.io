@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
             autoplay: true,
             loopItems: true,
             autoplayDelay:3000,
-            itemsPerMove: 3,     
+            itemsPerMove: 1,     
         });
     });
 
