@@ -67,7 +67,7 @@ jQuery(document).ready(function() {
         document.find('a[href$=".jpg"], a[href$=".png"]').each(function() {
             var jpgName = $(this).text();
             var jpgUrl = $(this).attr('href');
-            var newJpgUrl = '/slider-images/' + jpgUrl.replace(/slider-images/g, 'slider-images');
+            var newJpgUrl = jpgUrl.replace(/slider-images/g, 'slider-images');
 
             str += '<li class="touchcarousel-item"><img src="' + newJpgUrl + '" width="400"/></li>';
 
@@ -118,7 +118,7 @@ jQuery(document).ready(function() {
         document.find('a[href$=".jpg"], a[href$=".png"]').each(function() {
             var jpgName = $(this).text();
             var jpgUrl = $(this).attr('href');
-            var newJpgUrl = imgPrefixPath2 + jpgUrl.replace(/banner-images/g, 'banner-images');
+            var newJpgUrl = jpgUrl.replace(/banner-images/g, 'banner-images');
             var hrefBeginPortion = '';
             var hrefEndPortion = '';
             $(bannerHrefLinks).each(function( i, val ) {
