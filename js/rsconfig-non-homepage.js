@@ -9,4 +9,11 @@ jQuery(document).ready(function() {
 		$(".simpleCart_empty").addClass("btn btn-warning");
 		
 	}
+
+    $('#auditoriumslick').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 6000,
+	});
 });
