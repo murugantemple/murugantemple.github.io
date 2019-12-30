@@ -51,6 +51,10 @@ a.donatebtn {
 	color: #ffe301 !important;
 }
 
+a.kitchenbtn {
+	color: #5afd1f !important;
+}
+
 .dropdown-item {
 	color: #fff;
 }
@@ -827,22 +831,31 @@ hr.style18:before {
 }
 
 .price {
-  color: #1100d5;
-  font-size: 22px;
+  /*color: #1100d5;*/
+  font-size: 16px;
   margin-top: 10px;
   height: 20px;
+  border-top: 1px solid;
 }
 
 .cardtitle {
     font-size: 16px;
-    background-color: #911572;
-    color: #fff;
-    height: 40px;
-    line-height: 2.2;
+    /*background-color: #911572;*/
+    color: #000;
+    height: 34px;
+    /*line-height: 2.2;*/
 }
 
 .cardmsg {
   height: 10px;
+}
+
+.item_add {
+  max-width: 120px;
+}
+
+.card .item_add {
+	align-items: center;
 }
 
 .card button {
@@ -902,6 +915,7 @@ hr.style18:before {
   clear: both;
 }
 
+
 .simpleCart_items div div.headerRow div[class*="item-"] {
   float: left; /* fix for  buggy browsers */
   display: table-column;         
@@ -910,7 +924,7 @@ hr.style18:before {
 }
 
 .simpleCart_items div div.headerRow div.item-name {        
-  width: 200px;
+  width: 400px;
 }
 
 .simpleCart_items div div.headerRow div.item-decrement, 
@@ -927,7 +941,7 @@ hr.style18:before {
 }
 
 .simpleCart_items div div.itemRow div.item-name {
-  width: 200px;
+  width: 400px;
 }
 
 .simpleCart_items div div.itemRow div.item-decrement, 
@@ -972,4 +986,14 @@ hr.style18:before {
 	}
 }
 
+.projTitle {
+	color: blue;
+	font-weight: bolder;
+	font-size: 20px;
+}
 
+.projDesc {
+	color: green;
+	font-weight: bolder;
+	font-size: 20px;
+}

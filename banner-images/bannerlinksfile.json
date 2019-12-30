@@ -3,5 +3,10 @@
 		"filename": "98_Endowment-web2.png",
 		"link": "/about/endowment/",
 		"target": "_blank"
+	},
+	{
+		"filename": "5_donate-towards-a-project-banner.jpg",
+		"link": "/about/donate-towards-projects/",
+		"target": "_self"
 	}
 ]

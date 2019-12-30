@@ -6,10 +6,19 @@
     <description>Recent content in Abouts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 19:38:20 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://murugantemple.org/about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Donate Towards Projects At Murugan Temple</title>
+      <link>http://murugantemple.org/about/donate-towards-projects/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://murugantemple.org/about/donate-towards-projects/</guid>
+      <description>At Murugan Temple, you can make a donation towards one or more of the following projects. All contributions/donations are fully tax deductable. Please add the items to the cart and then check-out the cart when you&#39;re ready to proceed to the payment screen. Thank you.    List of Projects      Silver Kavasam Project (for Navagraham) Total Project Cost: $15,000  Amount: $  Add to Cart      Silver Kavasam Project (for Kaala Samhara Murthy) Total Project Cost: $11,000  Amount: $  Add to Cart      Shopping Cart Details:     Total:     Checkout via PayPal Clear Cart   Shopping Cart Details:  Total:   Checkout via PayPal Clear Cart   --   simpleCart({ checkout: { type: &#34;</description>
+    </item>
     
     <item>
       <title>Donate Online</title>
