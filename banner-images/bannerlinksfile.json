@@ -8,5 +8,10 @@
 		"filename": "5_donate-towards-a-project-banner.jpg",
 		"link": "/about/donate-towards-projects/",
 		"target": "_self"
+	},
+	{
+		"filename": "96_kitchen-website-link.jpg",
+		"link": "https://kitchen.murugantemple.org/",
+		"target": "_blank"
 	}
 ]
