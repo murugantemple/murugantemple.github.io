@@ -4,6 +4,7 @@
 	wojodesign.com
 	simplecartjs.org
 	http://github.com/wojodesign/simplecart-js
+	https://github.com/wojodesign/simplecart-js
 
 	VERSION 3.0.5
 

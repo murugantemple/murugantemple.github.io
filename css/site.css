@@ -816,68 +816,6 @@ hr.style18:before {
 }
 
 /* CARD DETAILS */
-.carddeck {
-  display: flex;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-left: auto;
-  text-align: center;
-  font-family: arial;
-  padding-bottom: 10px;
-  background-color: #cdcee6;
-  width: 300px;
-  height: 203px;
-}
-
-.price {
-  /*color: #1100d5;*/
-  font-size: 16px;
-  margin-top: 10px;
-  height: 20px;
-  border-top: 1px solid;
-}
-
-.cardtitle {
-    font-size: 16px;
-    /*background-color: #911572;*/
-    color: #000;
-    height: 34px;
-    /*line-height: 2.2;*/
-}
-
-.cardmsg {
-  height: 10px;
-}
-
-.item_add {
-  max-width: 120px;
-}
-
-.card .item_add {
-	align-items: center;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
 
 /* SimpleCartJS Formatting */
 /*.simpleCart_items table {
@@ -929,7 +867,7 @@ hr.style18:before {
 }
 
 .simpleCart_items div div.headerRow div.item-name {        
-  width: 400px;
+  width: 300px;
 }
 
 .simpleCart_items div div.headerRow div.item-decrement, 
@@ -946,13 +884,22 @@ hr.style18:before {
 }
 
 .simpleCart_items div div.itemRow div.item-name {
-  width: 400px;
+  width: 300px;
 }
 
 .simpleCart_items div div.itemRow div.item-decrement, 
 .simpleCart_items div div.itemRow div.item-increment,
 .simpleCart_items div div.itemRow div.item-quantity {        
-  width: 20px;
+  width: 100px;
+}
+
+.simpleCart_items div div.itemRow div.item-total {        
+  
+  width: 100px;
+}
+
+.simpleCart_items div div.itemRow div.item-remove {        
+  width: 100px;
 }
 
 .simpleCart_items div div.itemRow div.item-increment {
@@ -960,7 +907,7 @@ hr.style18:before {
 }
 
 .simpleCartTotal_parent {
-	padding-left: 366px;
+	padding-left: 396px;
 	font-weight: bold;
 }
 
