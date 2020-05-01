@@ -1,11 +1,16 @@
 [
 	{
-		"filename": "3b_JoinUsAsAMonthlyPatron.jpg",
+		"filename": "1_ChitraPournamiVilakkuPoojaBanner.jpg",
+		"link": "/events/chithirapournamivilakkupuja/",
+		"target": "_blank"
+	},
+	{
+		"filename": "4_JoinUsAsAMonthlyPatron.jpg",
 		"link": "/about/monthly-donation/",
 		"target": "_blank"
 	},
 	{
-		"filename": "3c_LivestreamingOnFacebook.jpg",
+		"filename": "2b_LivestreamingOnFacebook.jpg",
 		"link": "https://www.facebook.com/pg/MuruganTempleNorthAmerica/posts/?ref=page_internal",
 		"target": "_blank"
 	},
