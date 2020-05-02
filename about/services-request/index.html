@@ -6,7 +6,7 @@
     <meta name="description" content="Murugan Temple of North America in Lanham, Maryland, USA - (301) 552-4889">
     <meta name="author" content="Venkatt Guhesan">
 
-    <title>Murugan Temple of North America - Murugan Temple Endowment Fund - (301) 552-4889</title>
+    <title>Murugan Temple of North America - Puja Booking and Services Request - (301) 552-4889</title>
 
     
     <link href="/css/bootstrap.css" rel="stylesheet">
@@ -195,50 +195,276 @@
   	
   	<div class="row">
       <div class="col-lg-12">
-      	<h5 class="titlebar">Murugan Temple Endowment Fund</h5>
+      	<h5 class="titlebar">Puja Booking and Services Request</h5>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12 pagebodycontent">
-<img src="/img/content/endowment-banner.png" class="img-fluid rounded float-center p-2" alt="Murugan Temple Endowment">
+      <div class="col-lg-12 pagebodycontent"><p>Use this form below for making Puja requests online. Payment is handled by PayPal.</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <h5 class="card-header">Available Services</h5>
+        <div class="card-body">
+          <p class="card-text">Please add each service to your cart.</p>
+          <form>
+          <div class="">
+            <div class="row">
+              <div class="col p-1">
+                <select class="form-control text-monospace txt-mono-sml" id="serviceList">
+                  <option value="0">Choose Service:</option>
+                  <option value="Murugan Abishekam,$101"              >Abishekam (Murugan - Main Diety) ................. $101</option>
+                  <option value="Abishekam,$51"          >Abishekam (All Others) ........................... $51</option>
+                  <option value="Abishekam (temple sponsored),$25"    >Abishekam (temple sponsored) ..................... $25</option>
+                  <option value="0"                                   >----------------------------------------------------------</option>
+                  <option value="Archana - Ashtotharam,$6"            >Archana - Ashtotharam ............................ $6</option>
+                  <option value="Archana - Pushpanjali,$11"           >Archana - Pushpanjali ............................ $11</option>
+                  <option value="Archana - Trishati,$21"              >Archana - Trishati ............................... $21</option>
+                  <option value="Archana - Sahasranaama,$31"          >Archana - Sahasranaama ........................... $31</option>
+                  <option value="0"                                   >----------------------------------------------------------</option>
+                  <option value="Kaavadi,$21"                         >Kaavadi .......................................... $21</option>
+                  <option value="Palkudam,$13"                        >Kaavadi .......................................... $13</option>
+                  <option value="0"                                   >----------------------------------------------------------</option>
+                  <option value="Test,$1"                             >Test (no service will be performed) .............. $1</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1">
+                <label class="sr-only" for="serviceList">Deity:</label>
+                <select class="form-control text-monospace txt-mono-sml" id="deity">
+                  <option value="0">Choose Deity:</option>
+                  <option value="Murugan (Subramanya)"  >Murugan (Subramanya)</option>
+                  <option value="Ganesha"               >Ganesha</option>
+                  <option value="Siva"                  >Siva</option>
+                  <option value="Meenakshi"             >Meenakshi</option>
+                  <option value="Natarajar"             >Natarajar</option>
+                  <option value="Palani Andavar"        >Palani Andavar</option>
+                  <option value="Kala Bairavar"         >Kala Bairavar</option>
+                  <option value="Kala Samhara Murthy"   >Kala Samhara Murthy</option>
+                  <option value="Durga"                 >Durga</option>
+                  <option value="Dakshina Murthy"       >Dakshina Murthy</option>
+                  <option value="Navagraham"            >Navagraham</option>
+                  <option value="Sandhiheswarar"        >Sandhiheswarar</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col pt-1">
+                <div class="form-group">
+                  <p class="card-text">Choose Date (to perform service):</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1">
+                <div class="form-group">
+                  <div class='input-group date' id='datePicker1'>
+                      <input type='text' class="form-control" id="pickedDate" placeholder="Select Date..." data-input/>
+                      <div class="input-group-append">
+                        <span class="input-group-text fas fa-calendar-alt" data-toggle></span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1">
+                <textarea class="form-control item_instr" 
+                  id="instructions1" rows="3" placeholder="Special instructions or leave it blank"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1">
+                <a class="btn btn-primary item_add" href="javascript:;" id="addItemToCart" 
+                onClick="javascript: processItem();" role="button">Add Item To Cart</a>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <h5 class="card-header">Family Member Details (optional)</h5>
+        <div class="card-body">
+          <p>Enter details of each family member below. If you are the primary member, please provide your telephone and email address.</p>
+          <div class="row">
+            <div class="col m-1">
+                <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <input type="text" class="form-control" id="naksha" placeholder="Nakshathram">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <input type="text" class="form-control" id="raasi" placeholder="Raasi">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <input type="text" class="form-control" id="gothram" placeholder="Gothram">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <input type="text" class="form-control" id="email" placeholder="Email (only for primary)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <input type="text" class="form-control" id="phone" placeholder="Phone (only for primary)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <a href="#" class="btn btn-primary" onClick="javascript: processFamily();">Add Member Details To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+    <p><br/><b>Please note that your transaction is not complete until you check out using the "Checkout via PayPal" link at the bottom of the page.</b></p>
+  <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+  <div class="cartdetails_lbl">Shopping Cart Details:</div>
+  <div class="simpleCart_items"></div>
+  <div class="simpleCartTotal_parent">
+  Total: <span class="simpleCart_total"></span>
+  </div>
+  <a href="javascript:;" class="simpleCart_checkout">Checkout via PayPal</a>
+  <a href="javascript:;" class="simpleCart_empty">Clear Cart</a>
+  </div>
+</div>
+<script src="/simplecartjs/simpleCart.min.js"></script>
+<script>
+simpleCart({
+  checkout: { 
+    type: "PayPal" , 
+    email: "finance@murugantemple.org" 
+  },
+  currency:   "USD",
+  cartColumns: [
+    { attr: "name" , label: "Service/Member" },
+    { attr: "price" , label: "Price", view: 'currency' },
+    { view: "decrement" , label: false },
+    { attr: "quantity" , label: "Qty" },
+    { view: "increment" , label: false },
+    { attr: "total" , label: "SubTotal", view: 'currency' },
+    { view: "remove" , text: "Remove" , label: false }
+  ],
+});
+</script>
+<script type="text/javascript">
+function processItem() {
+  selOption = $('#serviceList').val();
+  if (selOption == '0') {
+    alert("Please choose a service");
+  }
+  else {
+    eleItems = selOption.split(',');
+    name = ''
+    if (eleItems[0] == 'Murugan Abishekam,$101') {
+      name = eleItems[0] + ' [ Murugan - Main Deity ]';
+    } else {
+      if ($('#deity').val() != '0') {
+        name = eleItems[0] + ' [' + $('#deity').val() + ']';
+      } else {
+        name = eleItems[0];
+      }
+    }
 
-<h2 align="center"><b><u>Murugan Temple of North America Endowment Fund</u></b></h2>
-<p><b>What is an Endowment?</b></p>
-<p><b>An <em>endowment</em></b> is any asset donated to and for the perpetual (everlasting) benefit of a non-profit organization. The donation is usually made with the requirement that the principal remain intact and money earned from investing the principal be used for a specific purpose. Endowment creates an ongoing source of income and provides Growth, Financial Safety and Stability to the organization.</p>
-<p><b><u>Purpose of Murugan Temple of North America (MTNA) Endowment Fund:</u></b></p>
-<p>Murugan Temple of North America “MTNA” has been blessed with a congregation that has supported it unstintingly since the inception in 1999.&nbsp; We thank the founders and senior members of MTNA congregation for their vision. This legacy must now be nurtured and preserved for future generations.</p>
-<p>In order for MTNA to sustain its growth and maintenance, it is essential to have a regular flow of funds apart from the operating budget and some other existing financial sources and expectations. In 2013, the Board of Trustees (BOT) had initiated a “MTNA Long Term Self Sufficiency” initiative. In 2015, “MTNA Endowment Fund (MEF) Steering Committee” was formed, which developed a strategy and an action plan to establish the MTNA Endowment fund. With a segment of the congregation advancing in age and retiring, now is the appropriate time to create a Permanent Endowment Fund for the temple.</p>
-<p>The Board of Trustees decided to form the Permanent Endowment Fund Committee as part of the existing structure of the temple administration. The MTNA Endowment Fund is duly organized through the authority of the Board of Trustees of MTNA and in accordance with the By Laws of MTNA, as revised.</p>
-<p>The permanent Endowment Fund of MTNA is established on Saturday, May 16<sup>th</sup>, 2018 to provide members and friends of the Temple with the opportunity to make charitable gifts to MTNA that will become a permanent endowment of financial support and a living memorial to the gift giver. The Fund is intended for Temple purposes which are not funded through the annual operating<b> </b>budget; however, gifts intended to supplement programs and projects will be allocated as appropriate.<b> </b>Endowment Funds may be designated for special programs by the donors.&nbsp;</p>
-<p>Gifts may be designated for the following purposes through the corresponding sub-funds of the Permanent Endowment Fund:</p>
-<p><u>Undesignated: </u></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The General Endowment Sub-Fund</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (for special needs identified by the MTNA Board of Trustees)</p>
-<p><u>Designated:</u></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Temple Mission Outreach Endowment Sub-Fund;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Building and property Maintenance Endowment Sub-Fund;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Construction and Capital Improvement Endowment Sub-Fund</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Scholarship Endowment Sub-Fund;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Special Purpose Endowment Sub-Fund (designated by the Donor)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Rainy Day or Emergency Use Endowment Sub-Fund</p>
-<p>&nbsp;</p>
-<p><u>Gift Instruments and Confidentiality:</u></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The donors can give or pledge their gifts (in the form of cash, publicly traded securities, closely held stocks, real estate, life insurance proceeds, retirement plans, and tangible personal property that are approvable by the Gift Acceptance Policy Committee) through or by using the Gift Giving Instruments such as Wills, Power of Attorney, Trusts, Estate Plans, Annuities, Life Insurance, Memorials etc.</p>
-<p>Any information and such data as personal, financial and/or pledges of the donors will be KEPT strictly CONFIDENTIAL and the PRIVACY of the individual donors will be PROTECTED by the Committee and its associated personnel.</p>
-<p>The Endowment Fund will be administered by the Endowment Fund Committee consisting of five members, two of whom will be ex-officio members and three of whom will be members-at-large.</p>
-<p>&nbsp;The Board of Trustees approved the nomination of the following members for the Endowment Fund Committee appointments and subsequently, on April 7, 2019, the Committee had its first meeting at which the Guidelines and Policies to be followed by the Committee were discussed and the following Office Bearers were elected.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p><strong>EX-OFFICIO MEMBERS</strong>:</p>
-<p>Gopal Guruswamy, Chair, Board of Trustees</p>
-<p>Krishnan Ramaswamy, Chair, Finance Committee of the Board</p>
-<p><strong>MEMBERS AT-LARGE</strong>:</p>
-<p>Krishnan Kumar, Chair, Endowment Fund Committee</p>
-<p>Vijay Kandaswamy, Secretary, Endowment Fund Committee</p>
-<p>Natarajan Ravendharan, Treasurer, Endowment Fund Committee</p>
-<p>To contact the Endowment Committee, please send an email to <b><a href="mailto:endow@murugantemple.org">endow@murugantemple.org</a> </b>with your phone number<b>. </b>One of us will contact you within 24 hours.<b></b></p>
-<p>The MTNA Endowment Fund Committee Members invite and request our devotees, members, patrons, office bearers and friends of the Temple to plan, pledge and/or donate their generous charitable gifts to MTNA that will become a permanent endowment of financial support and a living memorial to the gift giver.</p>
-<p>For any question or more information, you can contact any member of the Endowment Fund Committee listed above.</p>
-<p><b>&#8220;Further details and enhancements to this Flyer/Brochure will be made available and/or posted as they occur in the future.&#8221;</b></p>
+    deity = ''
+    if ($('#deity').val() != '0') {
+      deity = $('#deity').val()
+    }
+    
+    pickedDate = $('#pickedDate').val();
+    simpleCart.add({
+      name: name,
+      deity: deity,
+      price: eleItems[1],
+      date: pickedDate,
+      instr: $('#instructions1').val()
+    });
 
+  }
+}
+
+function processFamily() {
+  simpleCart.add({
+    name: $('#fullName').val(),
+    price: 0,
+    nakshatra: $('#naksha').val(),
+    raasi: $('#raasi').val(),
+    gotram: $('#gothram').val(),
+    email: $('#email').val(),
+    phone: $('#phone').val(),
+  });
+  $('#fullName').val('');
+  $('#naksha').val('');
+  $('#raasi').val('');
+  $('#gothram').val('');
+  $('#email').val('');
+  $('#phone').val('');
+}
+
+jQuery(document).ready(function($) {
+  $('.simpleCart_checkout').addClass('btn').addClass('btn-danger');
+});
+</script>
+<style>
+.txt-mono-sml {
+  font-size: 12px;
+}
+</style>
+<script type="text/javascript">
+
+  var now = Date.now();
+
+  jQuery(document).ready(function($) {
+
+    $("#datePicker1").flatpickr({
+      enableTime: true,
+      dateFormat: "D, M d at h:iK",
+      wrap: true,
+      defaultDate: now,
+    });
+
+  });
+</script>
+<style>
+.card-header {
+  background: #b5b1aa;
+  font-size: 18px;
+  font-weight: bold;
+  color: #21214a;
+}
+.item-decrement, .item-increment {
+  width: 10px !important;
+}
+.item-quantity {
+  width: 20px !important;
+  text-align: center;
+}
+div.headerRow .item-total {
+  padding-left: 70px !important;
+}
+div.headerRow .item-quantity {
+  padding-left: 10px !important;
+}
+</style>
 <ul class="pa0">
   
 </ul>
