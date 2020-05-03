@@ -129,6 +129,9 @@
     <script src="/js/moment-with-locales.min.js"></script>
     <script src="/flatpickr/flatpickr.js"></script>
     <link href="/flatpickr/flatpickr-dark.css" rel="stylesheet">
+    
+    <script src="/noty/noty.min.js"></script>
+    <link href="/noty/noty.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="" id="headerbar">
@@ -412,7 +415,7 @@ simpleCart({
   },
   currency:   "USD",
   cartColumns: [
-    { attr: "name" , label: "Service/Member" },
+    { attr: "name" , label: "Service or Member" },
     { attr: "date" , label: "Date" },
     { attr: "price" , label: "Price", view: 'currency' },
     { view: "decrement" , label: false },
@@ -456,6 +459,14 @@ function processItem() {
       instr: $('#instructions1').val()
     });
     
+    displayNotice = 'Item is added to cart!';    
+    new Noty({
+      theme: 'sunset',
+      text: displayNotice,
+      type: 'alert',
+      layout: 'center',
+      timeout: 1500
+    }).show();
     /* reset elements */
     $('#serviceList').val('0');
     $('#deity').val('0');
@@ -478,6 +489,14 @@ function processFamily() {
   $('#gothram').val('');
   $('#email').val('');
   $('#phone').val('');
+  displayNotice = 'Family member details has been added to cart!';    
+  new Noty({
+    theme: 'sunset',
+    text: displayNotice,
+    type: 'alert',
+    layout: 'center',
+    timeout: 1500
+  }).show();
 }
 
 jQuery(document).ready(function($) {
@@ -578,11 +597,11 @@ jQuery(document).ready(function($) {
 }
 
 .simpleCart_items div div.headerRow div.item-name {        
-  width: 200px;
+  width: 400px;
 }
 
 .simpleCart_items div div.itemRow div.item-name {
-  width: 200px;
+  width: 400px;
 }
 
 .simpleCart_items div div.headerRow div.item-date {
