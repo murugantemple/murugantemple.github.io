@@ -205,7 +205,7 @@
   <div class="row">
     <div class="col-sm">
       <div class="card">
-        <h5 class="card-header">Available Services</h5>
+        <h5 class="card-header">Step 1 of 3: Available Services</h5>
         <div class="card-body">
           <p class="card-text">Please add each service to your cart.</p>
           <form>
@@ -294,7 +294,7 @@
     </div>
     <div class="col-sm">
       <div class="card">
-        <h5 class="card-header">Family Member Details (optional)</h5>
+        <h5 class="card-header">Step 2 of 3: Family Member Details (optional)</h5>
         <div class="card-body">
           <p>Enter details of each family member below. If you are the primary member, please provide your telephone and email address.</p>
           <div class="row">
@@ -388,13 +388,19 @@
 </div>
 <div class="row">
   <div class="col-lg-12" align="center">
-  <div class="cartdetails_lbl">Shopping Cart Details:</div>
-  <div class="simpleCart_items"></div>
-  <div class="simpleCartTotal_parent">
-  Total: <span class="simpleCart_total"></span>
-  </div>
-  <a href="javascript:;" class="simpleCart_checkout">Checkout via PayPal</a>
-  <a href="javascript:;" class="simpleCart_empty">Clear Cart</a>
+    <div class="card">
+      <h5 class="card-header">Step 3 of 3: Checkout</h5>
+      <div class="card-body">
+        <div class="cartdetails_lbl">Shopping Cart Details:</div>
+        <div class="simpleCart_items"></div>
+        <div class="simpleCartTotal_parent">
+        Total: <span class="simpleCart_total"></span>
+        </div>
+        <a href="javascript:;" class="simpleCart_checkout">Checkout via PayPal</a>
+        <a href="javascript:;" class="simpleCart_empty">Clear Cart</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script src="/simplecartjs/simpleCart.min.js"></script>
@@ -407,6 +413,7 @@ simpleCart({
   currency:   "USD",
   cartColumns: [
     { attr: "name" , label: "Service/Member" },
+    { attr: "date" , label: "Date" },
     { attr: "price" , label: "Price", view: 'currency' },
     { view: "decrement" , label: false },
     { attr: "quantity" , label: "Qty" },
@@ -509,19 +516,167 @@ jQuery(document).ready(function($) {
   background: #f2ecec;
 }
 
+/* CARD DETAILS */
+
+/* SimpleCartJS Formatting */
+/*.simpleCart_items table {
+  width:100%;
+}
+
+.simpleCart_items div div.headerRow div[class*="item-"] {
+  float:left;
+  width: 20%;
+}
+
+.simpleCart_items div div.itemRow div[class*="item-"] {
+  float:left;
+  width: 20%;
+}
+*/
+
+.cartdetails_lbl {
+  font-weight: bold;
+}
+
+/* SIMPLE CART STYLE */
+
+.simpleCart_items  {
+  display: table;         
+  width: auto;         
+  /*background-color: #eee;*/         
+  /*border: 1px solid #666666;*/         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+
+.simpleCart_items div div.headerRow {
+  display: table-row;
+  width: auto;
+  clear: both;
+  color: #198029;
+}
+
+.simpleCart_items div div.itemRow {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+
+
+.simpleCart_items div div.headerRow div[class*="item-"] {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 100px;       
+  /*background-color: #ccc;*/
+}
+
+.simpleCart_items div div.itemRow div[class*="item-"] {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 100px;       
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.simpleCart_items div div.headerRow div.item-name {        
+  width: 200px;
+}
+
+.simpleCart_items div div.itemRow div.item-name {
+  width: 200px;
+}
+
+.simpleCart_items div div.headerRow div.item-date {
+  width: 100px;
+}
+
+.simpleCart_items div div.itemRow div.item-date {
+  width: 100px;
+  min-width: 100px;
+  display: list-item;
+}
+
+.simpleCart_items div div.headerRow div.item-price {
+  width: 80px;
+}
+
+.simpleCart_items div div.itemRow div.item-price {
+  width: 80px;
+}
+
+.simpleCart_items div div.headerRow div.item-quantity {
+  margin-left: 10px;
+  min-width: 48px;
+}
+
+.simpleCart_items div div.itemRow div.item-quantity {
+  width: 80px;
+}
+
+.simpleCart_items div div.headerRow div.item-total {
+  width: 100px;
+  padding-left: 10px;
+}
+
+.simpleCart_items div div.itemRow div.item-total {
+  width: 100px;
+  padding-left: 16px;
+}
+
+.simpleCartTotal_parent {
+  padding-left: 253px;
+  font-weight: bold;
+}
+
+.simpleCart_checkout {
+  margin-left: 252px;
+}
+
+.simpleCart_empty {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .simpleCart_items div div.headerRow div.item-name {        
+    width: 130px;
+  }
+
+  .simpleCart_items div div.itemRow div.item-name {
+    width: 130px;
+  }
+
+  .simpleCartTotal_parent {
+    padding-left: 45px;
+    font-weight: bold;
+  }
+
+  .simpleCart_checkout {
+    margin-left: 10px;
+  }
+  
+  .item-date, .item-total, .item-quantity, .item-increment, .item-decrement
+  {        
+    display: none !important;
+  }
+
+
+  /*.cartdetails_lbl, .simpleCart_items {
+    display: none;
+  }*/
+
+  .simpleCart_empty {
+    display: none;
+  }
+}
+
 .item-decrement, .item-increment {
   width: 10px !important;
 }
 .item-quantity {
-  width: 20px !important;
+  width: 40px !important;
   text-align: center;
 }
-div.headerRow .item-total {
-  padding-left: 70px !important;
-}
-div.headerRow .item-quantity {
-  padding-left: 10px !important;
-}
+
 </style>
 <ul class="pa0">
   
