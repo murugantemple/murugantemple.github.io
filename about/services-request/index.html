@@ -470,6 +470,7 @@ function processItem() {
     /* reset elements */
     $('#serviceList').val('0');
     $('#deity').val('0');
+    $('#fullName').focus();
   }
 }
 
@@ -497,6 +498,7 @@ function processFamily() {
     layout: 'center',
     timeout: 1500
   }).show();
+  $('#fullName').focus();
 }
 
 jQuery(document).ready(function($) {
