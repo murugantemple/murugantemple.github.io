@@ -171,13 +171,13 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/about/our-services/">Our Services</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="#contactus">Contact Us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link kitchenbtn" href="https://kitchen.murugantemple.org/" target="_blank">Temple Kitchen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link donatebtn" href="/about/our-services/">Our Services</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link donatebtn" href="/about/donate-online" target="_blank">Donate Online</a>
@@ -199,7 +199,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12 pagebodycontent"><p>Use this form below for making Puja requests online. Payment is handled by PayPal.</p>
+      <div class="col-lg-12 pagebodycontent"><p>Use this form below for requesting services that are available online. Please note that we are only listing services that can be performed and requested online in the form below. Some of the services not listed below requires you to be at the temple (example - Kaavidi or Palkudam). For a list of all available services, please visit the link <a href='/about/our-services/'>here</a>. Payment is handled by PayPal.</p>
+<p>If there is a service that is not listed, please make a general donation for the total amount and contact the temple with your PayPal transaction to notify of any details. For general donations, please visit &ldquo;<a href='/about/donate-online/'>Donate Online</a>&rdquo;.</p>
 <div class="container">
   <div class="row">
     <div class="col-sm">
@@ -212,7 +213,7 @@
             <div class="row">
               <div class="col p-1">
                 <select class="form-control text-monospace txt-mono-sml" id="serviceList">
-                  <option value="0">Choose Service:</option>
+                  <option value="0">-- Choose Service --</option>
                   <option value="Murugan Abishekam,$101"              >Abishekam (Murugan - Main Diety) ................. $101</option>
                   <option value="Abishekam,$51"          >Abishekam (All Others) ........................... $51</option>
                   <option value="Abishekam (temple sponsored),$25"    >Abishekam (temple sponsored) ..................... $25</option>
@@ -233,7 +234,7 @@
               <div class="col p-1">
                 <label class="sr-only" for="serviceList">Deity:</label>
                 <select class="form-control text-monospace txt-mono-sml" id="deity">
-                  <option value="0">Choose Deity:</option>
+                  <option value="0">-- Choose Deity --</option>
                   <option value="Murugan (Subramanya)"  >Murugan (Subramanya)</option>
                   <option value="Ganesha"               >Ganesha</option>
                   <option value="Siva"                  >Siva</option>
@@ -297,12 +298,55 @@
           </div>
           <div class="row">
             <div class="col m-1">
-              <input type="text" class="form-control" id="naksha" placeholder="Nakshathram">
+              <select class="form-control text-monospace txt-mono-sml" id="naksha">
+                <option value="-">-- Select Nakshatra --</option>
+                <option value="Ashvini/Aswini">Ashvini/Aswini</option>
+                <option value="Bharani">Bharani</option>
+                <option value="Krittika/Krithika">Krittika/Krithika</option>
+                <option value="Rohini">Rohini</option>
+                <option value="Mrigashirsha">Mrigashirsha</option>
+                <option value="Ardra">Ardra</option>
+                <option value="Punarvasu">Punarvasu</option>
+                <option value="Pushya">Pushya</option>
+                <option value="Ashlesha">Ashlesha</option>
+                <option value="Magha">Magha</option>
+                <option value="Purva Phalguni">Purva Phalguni</option>
+                <option value="Uttara Phalguni">Uttara Phalguni</option>
+                <option value="Hasta">Hasta</option>
+                <option value="Chitra">Chitra</option>
+                <option value="Swati">Swati</option>
+                <option value="Vishakha">Vishakha</option>
+                <option value="Anuradha">Anuradha</option>
+                <option value="Jyeshtha">Jyeshtha</option>
+                <option value="Mula">Mula</option>
+                <option value="Purva Ashadha">Purva Ashadha</option>
+                <option value="Uttara Ashadha">Uttara Ashadha</option>
+                <option value="Shravana">Shravana</option>
+                <option value="Dhanishtha">Dhanishtha</option>
+                <option value="Shatabhisha">Shatabhisha</option>
+                <option value="Purva Bhadrapada">Purva Bhadrapada</option>
+                <option value="Uttara Bhadrapada">Uttara Bhadrapada</option>
+                <option value="Revati">Revati</option>
+              </select>
             </div>
           </div>
           <div class="row">
             <div class="col m-1">
-              <input type="text" class="form-control" id="raasi" placeholder="Raasi">
+              <select class="form-control text-monospace txt-mono-sml" id="raasi">
+                <option value="-">-- Select Rassi --</option>
+                <option value="Maysham">Maysham</option>
+                <option value="Rishabam">Rishabam</option>
+                <option value="Mithunam">Mithunam</option>
+                <option value="Kadagam">Kadagam</option>
+                <option value="Simmam">Simmam</option>
+                <option value="Kanni">Kanni</option>
+                <option value="Thulam">Thulam</option>
+                <option value="Viruchaga">Viruchaga</option>
+                <option value="Thanusu">Thanusu</option>
+                <option value="Maharam">Maharam</option>
+                <option value="Kumbam">Kumbam</option>
+                <option value="Meenam">Meenam</option>
+              </select>
             </div>
           </div>
           <div class="row">
@@ -387,7 +431,7 @@ function processItem() {
 
     deity = ''
     if ($('#deity').val() != '0') {
-      deity = $('#deity').val()
+      deity = $('#deity').val();
     }
     
     pickedDate = $('#pickedDate').val();
@@ -398,7 +442,10 @@ function processItem() {
       date: pickedDate,
       instr: $('#instructions1').val()
     });
-
+    
+    /* reset elements */
+    $('#serviceList').val('0');
+    $('#deity').val('0');
   }
 }
 
@@ -406,15 +453,15 @@ function processFamily() {
   simpleCart.add({
     name: $('#fullName').val(),
     price: 0,
-    nakshatra: $('#naksha').val(),
-    raasi: $('#raasi').val(),
+    nakshatra: $('#naksha').val('-'),
+    raasi: $('#raasi').val('-'),
     gotram: $('#gothram').val(),
     email: $('#email').val(),
     phone: $('#phone').val(),
   });
   $('#fullName').val('');
-  $('#naksha').val('');
-  $('#raasi').val('');
+  $('#naksha').val();
+  $('#raasi').val();
   $('#gothram').val('');
   $('#email').val('');
   $('#phone').val('');
@@ -615,7 +662,7 @@ div.headerRow .item-quantity {
                   <ul class="footer-text-list-style">
                     <li><a href="/">Home</a></li>
                     <li><a href="/about/about-temple/">About Temple</a></li>
-                    <li><a href="/about/our-services/">Our Services</a></li>
+                    <li><a class="donatebtn" href="/about/our-services/">Our Services</a></li>
                     <li><a href="#contactus">Contact Us</a></li>
                   </ul>
                 </div>
