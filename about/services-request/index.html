@@ -462,14 +462,21 @@ function processItem() {
         name = eleItems[0];
       }
     }
-  
-    pickedDate = $('#pickedDate').val();
-    simpleCart.add({
+    
+    item = {
       name: name,
       price: eleItems[1],
-      PickedDate: pickedDate,
-      Comment: $('#instructions1').val()
-    });
+    };
+
+    if ($('#pickedDate').val().length > 0) {
+      item['PickedDate'] = $('#pickedDate').val();
+    }
+
+    if ($('#instructions1').val().length > 0) {
+      item['Comment'] = $('#instructions1').val();
+    }
+
+    simpleCart.add(item);
     
     displayNotice = 'Item has been added to the cart below!';    
     new Noty({
