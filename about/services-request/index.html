@@ -462,19 +462,13 @@ function processItem() {
         name = eleItems[0];
       }
     }
-
-    deity = ''
-    if ($('#deity').val() != '0') {
-      deity = $('#deity').val();
-    }
-    
+  
     pickedDate = $('#pickedDate').val();
     simpleCart.add({
       name: name,
-      deity: deity,
       price: eleItems[1],
-      date: pickedDate,
-      instr: $('#instructions1').val()
+      PickedDate: pickedDate,
+      Comment: $('#instructions1').val()
     });
     
     displayNotice = 'Item has been added to the cart below!';    
@@ -540,10 +534,10 @@ function processFamily() {
       cart['name'] = u;
     }
     if (c.length > 0) {
-      cart['contact'] = c;
+      cart['ContactInfo'] = c;
     }
     if (d.length > 0) {
-      cart['detail'] = d;
+      cart['Detail'] = d;
     }
     simpleCart.add(cart);
 
