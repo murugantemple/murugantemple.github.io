@@ -2,7 +2,7 @@
 	{
 		"filename": "0_SuklaShasti_web.jpg",
 		"link": "/about/services-request/",
-		"target": "_blank"
+		"target": "_self"
 	},
 	{
 		"filename": "1_JoinUsAsAMonthlyPatron.jpg",
