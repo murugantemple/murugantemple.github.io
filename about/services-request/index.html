@@ -220,8 +220,8 @@
                   <option value="0">-- Select Service --</option>
                   <option value="Archanai,$9"                   >Archanai .................................... $9</option>
                   <option value="Sahasranamam,$11"              >Sahasranamam ................................ $11</option>
-                  <option value="Murugan Abishekam,$101"        >Abishekam (Murugan - Main Diety) ............ $101</option>
-                  <option value="Abishekam,$51"                 >Abishekam (All Others) ...................... $51</option>
+                  <option value="Murugan Abishekam,$101"        >Abishekam (Murugan - Main Deity Only) ....... $101</option>
+                  <option value="Abishekam,$51"                 >Abishekam (All Other Deities) ............... $51</option>
                   <option value="Sangu Abishekam,$151"          >Abishekam (Sangu) ........................... $151</option>
                   <option value="Homam,$31"                     >Homam ....................................... $31</option>
                   <option value="Paal Kudam,$11"                >Paal Kudam .................................. $11</option>
@@ -414,27 +414,38 @@
 </div>
 <script src="/simplecartjs/simpleCart.min.js"></script>
 <script>
-simpleCart({
-  checkout: { 
-    type: "PayPal" , 
-    email: "finance@murugantemple.org" 
-  },
-  currency:   "USD",
-  cartColumns: [
-    { attr: "name" , label: "Service or Member" },
-    { attr: "date" , label: "Date" },
-    { attr: "price" , label: "Price", view: 'currency' },
-    { view: "decrement" , label: false },
-    { attr: "quantity" , label: "Qty" },
-    { view: "increment" , label: false },
-    { attr: "total" , label: "SubTotal", view: 'currency' },
-    { view: "remove" , text: "Remove" , label: false }
-  ],
+jQuery(document).ready(function($) {
+  simpleCart({
+    checkout: { 
+      type: "PayPal" , 
+      email: "finance@murugantemple.org" 
+    },
+    currency:   "USD",
+    cartColumns: [
+      { attr: "name" , label: "Service or Member" },
+      { attr: "date" , label: "Date" },
+      { attr: "price" , label: "Price", view: 'currency' },
+      { view: "decrement" , label: false },
+      { attr: "quantity" , label: "Qty" },
+      { view: "increment" , label: false },
+      { attr: "total" , label: "SubTotal", view: 'currency' },
+      { view: "remove" , text: "Remove" , label: false }
+    ],
+    load: loadInitialCart(),
+  });
 });
+function loadInitialCart() {
+  simpleCart.each(function(item){
+    if (item.get('dateaddedtocart') === undefined) {
+      item.remove(); 
+    }
+  });
+}
 </script>
 <script type="text/javascript">
 function processItem() {
   selOption = $('#serviceList').val();
+  skipAdd = true;
   if (selOption == '0') {
     //alert("Please choose a service");
     new Noty({
@@ -453,47 +464,72 @@ function processItem() {
   else {
     eleItems = selOption.split(',');
     name = ''
-    if (eleItems[0] == 'Murugan Abishekam,$101') {
+    if (eleItems[0] == 'Murugan Abishekam') {
       name = eleItems[0] + ' [ Murugan - Main Deity ]';
-    } else {
+      skipAdd = false;
+    } 
+    else if (eleItems[0] == 'Abishekam' && $('#deity').val() == 'Murugan (Subramanya)') {
+      displayNotice = 'INVALID SELECTION: The cost for Lord Murugan abishekam is $101. You have chosen the abishekam which is $51 for all other deities other than Lord Murugan. Please choose either "Abishekam (Murugan - Main Deity Only),$101" or a different deity other than Lord Muruga from the list. Thank You.';    
+      new Noty({
+        theme: 'sunset',
+        text: displayNotice,
+        type: 'error',
+        layout: 'center',
+        timeout: 15000,
+        animation: {
+          open: 'animated bounceInUp', // Animate.css class names
+          close: 'animated bounceOutDown' // Animate.css class names
+        },
+      }).show();
+      $('#deity').focus();
+      skipAdd = true;
+    }
+    else {
+      skipAdd = false;
       if ($('#deity').val() != '0') {
         name = eleItems[0] + ' [' + $('#deity').val() + ']';
       } else {
         name = eleItems[0];
       }
     }
-    
-    item = {
-      name: name,
-      price: eleItems[1],
-    };
 
-    if ($('#pickedDate').val().length > 0) {
-      item['PickedDate'] = $('#pickedDate').val();
+    if (skipAdd == false) {
+      item = {
+        name: name,
+        price: eleItems[1],
+      };
+
+      if ($('#pickedDate').val().length > 0) {
+        item['PickedDate'] = $('#pickedDate').val();
+      }
+
+      if ($('#instructions1').val().length > 0) {
+        item['Comment'] = $('#instructions1').val();
+      }
+
+      // Add date-added-to-cart
+      item['dateaddedtocart'] = moment().format('YYYYMMDD');
+
+      simpleCart.add(item);
+      
+      displayNotice = 'Item has been added to the cart below!';    
+      new Noty({
+        theme: 'sunset',
+        text: displayNotice,
+        type: 'alert',
+        layout: 'center',
+        timeout: 1500,
+        animation: {
+          open: 'animated bounceInUp', // Animate.css class names
+          close: 'animated bounceOutDown' // Animate.css class names
+        },
+      }).show();
+      /* reset elements */
+      $('#serviceList').val('0');
+      $('#deity').val('0');
+      $('#fullName').focus();
     }
-
-    if ($('#instructions1').val().length > 0) {
-      item['Comment'] = $('#instructions1').val();
-    }
-
-    simpleCart.add(item);
     
-    displayNotice = 'Item has been added to the cart below!';    
-    new Noty({
-      theme: 'sunset',
-      text: displayNotice,
-      type: 'alert',
-      layout: 'center',
-      timeout: 1500,
-      animation: {
-        open: 'animated bounceInUp', // Animate.css class names
-        close: 'animated bounceOutDown' // Animate.css class names
-      },
-    }).show();
-    /* reset elements */
-    $('#serviceList').val('0');
-    $('#deity').val('0');
-    $('#fullName').focus();
   }
 }
 
