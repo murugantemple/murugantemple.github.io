@@ -8,6 +8,10 @@
 	color: #fff;
 }
 
+.containersml {
+	width: 450px;
+}
+
 #headernote {
     background-color: #c7ced5;
     color: #174068;
@@ -834,3 +838,6 @@ hr.style18:before {
 	font-size: 20px;
 }
 
+.fgColorRed{
+	color: #B24540;
+}
