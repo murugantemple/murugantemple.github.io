@@ -1,6 +1,11 @@
 [
 	{
-		"filename": "1_JoinUsAsAMonthlyPatron.jpg",
+		"filename": "0_amazon-smile.jpg",
+		"link": "https://smile.amazon.com/gp/chpf/homepage/ref=smi_se_scyc_srch_stsr?q=apache+software+foundation&orig=%2F",
+		"target": "_blank"
+	},
+	{
+		"filename": "10_JoinUsAsAMonthlyPatron.jpg",
 		"link": "/about/monthly-donation/",
 		"target": "_blank"
 	},
@@ -10,7 +15,7 @@
 		"target": "_blank"
 	},
 	{
-		"filename": "5_donate-towards-a-project-banner.jpg",
+		"filename": "50_donate-towards-a-project-banner.jpg",
 		"link": "/about/donate-towards-projects/",
 		"target": "_self"
 	},
