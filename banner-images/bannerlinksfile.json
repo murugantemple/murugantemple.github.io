@@ -11,6 +11,11 @@
 		"target": "_self"
 	},
 	{
+		"filename": "04_VirtualTempleVideo.jpg",
+		"link": "/about/about-virtualtour/",
+		"target": "_self"
+	},
+	{
 		"filename": "09_amazon-smile.jpg",
 		"link": "https://smile.amazon.com/gp/chpf/homepage?q=Murugan+Temple+of+North+America&orig=%2F&ie=UTF-8",
 		"target": "_blank"
