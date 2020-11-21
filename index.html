@@ -632,6 +632,14 @@ if (location.protocol != 'https:' && (location.hostname.indexOf("localhost") == 
 }
 </script>
 
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("https://murugantemple.org//") > -1) {
+      location.href = 'https://murugantemple.org/'
+    }
+  });
+</script>
+
 
 
 
