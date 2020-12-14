@@ -285,41 +285,30 @@
 
 <div class="row">
   <div class="col-lg-12" align="center">
-	<div class="cartdetails_lbl">Shopping Cart Details:</div>
-  </div>
- </div>
- <div class="row">
- 	<div class="col-lg-12 simpleCart_items" align="center">
- 	</div>
- </div>
- <div class="row">
-	<div class="col-lg-12" align="center">
-		<div class="simpleCartTotal_parent">
-		Total: <span class="simpleCart_total"></span>
+	<div class="row">
+	  <div class="col-lg-12" align="center">
+		<div class="cartdetails_lbl">Shopping Cart Details:</div>
+	  </div>
+	</div>
+	<div class="row">
+	 	<div class="col-lg-12 simpleCart_items mx-auto">
+	 	</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 mx-auto" align="center">
+			<div class="simpleCartTotal_parent">
+			Total: <span class="simpleCart_total"></span>
+			</div>
 		</div>
 	</div>
- </div>
- <div class="row">
-  <div class="col-lg-12" align="center">
-	<a href="javascript:;" class="simpleCart_checkout btn btn-success">Checkout via PayPal</a>
-	<a href="javascript:;" class="simpleCart_empty">Clear Cart</a>
+	<div class="row">
+	  <div class="col-lg-12" align="center">
+		<a href="javascript:;" class="simpleCart_checkout btn btn-success">Checkout via PayPal</a>
+		<a href="javascript:;" class="simpleCart_empty btn btn-warning">Clear Cart</a>
+	  </div>
+	</div>
   </div>
 </div>
-
-
-<!-- <div class="row">
-  <div class="col-lg-12" align="center">
-	<div class="cartdetails_lbl">Shopping Cart Details:</div>
-
-	<div class="simpleCart_items"></div>
-
-	<div class="simpleCartTotal_parent">
-	Total: <span class="simpleCart_total"></span>
-	</div>
-	<a href="javascript:;" class="simpleCart_checkout">Checkout via PayPal</a>
-	<a href="javascript:;" class="simpleCart_empty">Clear Cart</a>
-  </div>
-</div> -->
 
 <script src="/simplecartjs/simpleCart.min.js"></script>
 <script>
@@ -451,16 +440,16 @@ simpleCart({
 }
 
 .simpleCartTotal_parent {
-  padding-left: 253px;
+  padding-left: 353px;
   font-weight: bold;
 }
 
 .simpleCart_checkout {
-  margin-left: 252px;
+  margin-left: 352px;
 }
 
 .simpleCart_empty {
-  display: none;
+  //display: none;
 }
 
 @media (max-width: 767px) {
