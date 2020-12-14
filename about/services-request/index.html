@@ -357,9 +357,10 @@ function loadInitialCart() {
     //   item.remove(); 
     // }
     // cart['dateaddedtocart'] = moment().format('YYYYMMDD');
-    if (item.get('dateaddedtocart') === undefined || item.get('dateaddedtocart') < 20201114) {
-      item.remove(); 
-    }
+    // if (item.get('dateaddedtocart') === undefined || item.get('dateaddedtocart') < 20201214) {
+    //   item.remove(); 
+    // }
+    item.remove(); 
   });
 }
 </script>
