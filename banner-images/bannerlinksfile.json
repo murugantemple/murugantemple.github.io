@@ -1,5 +1,10 @@
 [
 	{
+		"filename": "03_ways_to_give_web.jpg",
+		"link": "/about/about-give/",
+		"target": "_self"
+	},
+	{
 		"filename": "00_thiruvembavai_web.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
