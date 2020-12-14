@@ -6,10 +6,20 @@
     <description>Recent content in Abouts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2020 19:38:20 -0500</lastBuildDate>
     
 	<atom:link href="http://murugantemple.org/about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pooja Booking and Services Request</title>
+      <link>http://murugantemple.org/about/services-request/</link>
+      <pubDate>Sun, 13 Dec 2020 19:38:20 -0500</pubDate>
+      
+      <guid>http://murugantemple.org/about/services-request/</guid>
+      <description>Use this form below for requesting services that are available online. Please note that we are only listing services that can be performed and requested online in the form below. Some of the services not listed below requires you to be at the temple (example - Kaavidi or Palkudam). For a list of all available services, please visit the link here. Payment is handled by PayPal.
+If there is a service that is not listed, please make a general donation for the total amount and contact the temple with your PayPal transaction to notify of any details.</description>
+    </item>
     
     <item>
       <title>Murugan Temple : Check-In Forms and Process For Visiting Temple</title>
@@ -143,16 +153,6 @@ An endowment is any asset donated to and for the perpetual (everlasting) benefit
       <pubDate>Tue, 26 Nov 2019 19:38:20 -0500</pubDate>
       
       <guid>http://murugantemple.org/about/services-request-prev/</guid>
-      <description>Use this form below for requesting services that are available online. Please note that we are only listing services that can be performed and requested online in the form below. Some of the services not listed below requires you to be at the temple (example - Kaavidi or Palkudam). For a list of all available services, please visit the link here. Payment is handled by PayPal.
-If there is a service that is not listed, please make a general donation for the total amount and contact the temple with your PayPal transaction to notify of any details.</description>
-    </item>
-    
-    <item>
-      <title>Pooja Booking and Services Request</title>
-      <link>http://murugantemple.org/about/services-request/</link>
-      <pubDate>Tue, 26 Nov 2019 19:38:20 -0500</pubDate>
-      
-      <guid>http://murugantemple.org/about/services-request/</guid>
       <description>Use this form below for requesting services that are available online. Please note that we are only listing services that can be performed and requested online in the form below. Some of the services not listed below requires you to be at the temple (example - Kaavidi or Palkudam). For a list of all available services, please visit the link here. Payment is handled by PayPal.
 If there is a service that is not listed, please make a general donation for the total amount and contact the temple with your PayPal transaction to notify of any details.</description>
     </item>
