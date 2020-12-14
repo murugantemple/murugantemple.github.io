@@ -227,7 +227,7 @@
   <div class="row">
     <div class="col-sm">
       <div class="card">
-        <h5 class="card-header">Choose Service Details (<span style="color: #a21414;">required</span>)</h5>
+        <h5 class="card-header">Step 1 of 4: Choose Service (<span style="color: #a21414;">required</span>)</h5>
         <div class="card-body">
           Please add each of the required services one by one to your cart. Then proceed to step 2.
           <form>
@@ -303,28 +303,147 @@
             </div>
             <div class="row">
               <div class="col p-1">
-                <input type="text" class="form-control" id="altemail" placeholder="Email">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col p-1">
-                <input type="text" class="form-control" id="altphone" placeholder="Phone">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col p-1">
                 <textarea class="form-control item_instr" 
-                  id="instructions1" rows="3" placeholder="Family Sangalpam Details (one-line-per-individual : Name Nakshatra Raasi Gotram) and any special instructions."></textarea>
+                  id="instructions1" rows="3" placeholder="Special instructions or leave it blank"></textarea>
               </div>
             </div>
             <div class="row">
               <div class="col p-1 d-flex justify-content-center">
                 <a class="btn btn-primary btn-sm" href="javascript:;" id="addItemToCart" 
-                onClick="javascript: processItem();" role="button">Add Item To Cart and Checkout With PayPal</a>
+                onClick="javascript: processItem();" role="button">Add Item To Cart</a>
               </div>
             </div>
           </div>
           </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <h5 class="card-header">Step 2 of 4: Family/Sangalpam Details (<span style="color: #0f9342;">optional</span>)</h5>
+        <div class="card-body">
+          Enter details of each member of your family and add them to the cart. Then proceed to step 3.
+          <div class="row">
+            <div class="col m-1">
+                <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <select class="form-control text-monospace txt-mono-sml" id="naksha">
+                <option value="-">-- Select Nakshatra --</option>
+                <option value="Aswini">Ashvini/Aswini (அசுவினி)</option>
+                <option value="Bharani">Bharani (பரணி)</option>
+                <option value="Karthigai">Krithika/Karthigai (கிருத்திகை)</option>
+                <option value="Rohini">Rohini (ரோகிணி)</option>
+                <option value="Mrigasheersham">Mrigasheersham (மிருகசிரீஷம்)</option>
+                <option value="Thiruvaathirai">Aardhra/Thiruvaathirai (திருவாதிரை)</option>
+                <option value="Punarpoosam">Punarvasu/Punarpoosam (புனர்பூசம்)</option>
+                <option value="Poosam">Pushyami/Poosam (பூசம்)</option>
+                <option value="Aayilyam">Ashlesha/Aayilyam (ஆயில்யம்)</option>
+                <option value="Makam">Magha/Makam (மகம்)</option>
+                <option value="Pooram">Purva Phalguni/Pooram (பூரம்)</option>
+                <option value="Uthiram">Uttara Phalguni/Uthiram (உத்திரம்)</option>
+                <option value="Hastham">Hasta/Hastham (ஹஸ்தம்)</option>
+                <option value="Chithirai">Chitra/Chithirai (சித்திரை)</option>
+                <option value="Swati">Swati/Swaathi (சுவாதி)</option>
+                <option value="Visaakam">Vishakha/Visaakam (விசாகம்)</option>
+                <option value="Anusham">Anuradha/Anusham (அனுஷம்)</option>
+                <option value="Kettai">Jyeshtha/Kettai (கேட்டை)</option>
+                <option value="Moolam">Mula/Moolam (முலம்)</option>
+                <option value="Pooraadam">Purva Ashadha/Pooraadam (பூராடம்)</option>
+                <option value="Uthiraadam">Uttara Ashadha/Uthiraadam (உத்திராடம்)</option>
+                <option value="Thiruvonam">Shravana/Thiruvonam (திருவோணம்)</option>
+                <option value="Avittam">Dhanishtha/Avittam (அவிட்டம்)</option>
+                <option value="Sadayam">Shatabhisha/Sadayam (சதயம்)</option>
+                <option value="Poorattathi">Purva Bhadrapada/Poorattathi (பூரட்டாதி)</option>
+                <option value="Uthirattathi">Uttara Bhadrapada/Uthirattathi (உத்திரட்டாதி)</option>
+                <option value="Revati">Revati (ரேவதி)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <select class="form-control text-monospace txt-mono-sml" id="raasi">
+                <option value="-">-- Select Rassi --</option>
+                <option value="Mesham">Mesham (மேஷம்)</option>
+                <option value="Rishabam">Rishabam (ரிஷபம்)</option>
+                <option value="Mithunam">Midhunam (மிதுனம்)</option>
+                <option value="Kadagam">Kadagam (கடகம்)</option>
+                <option value="Simmam">Simmam (சிம்மம்)</option>
+                <option value="Kanni">Kanni (கன்னி)</option>
+                <option value="Thula">Thula (துலாம்)</option>
+                <option value="Viruchigam">Viruchigam (விருச்சிகம்)</option>
+                <option value="Dhanusu">Dhanusu (தனுசு)</option>
+                <option value="Magaram">Magaram (மகரம்)</option>
+                <option value="Kumbam">Kumbam (கும்பம்)</option>
+                <option value="Meenam">Meenam (மீனம்)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1">
+              <input type="text" class="form-control" id="gothram" placeholder="Gothram">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m-1 d-flex justify-content-center">
+              <a href="#" class="btn btn-primary btn-sm" onClick="javascript: processFamily();">Add Member Details To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-1">&nbsp;
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Step 3 of 4: Primary Contact Details (<span style="color: #a21414;">required</span>)</h5>
+        <div class="card-body">
+            <div class="row">
+              <div class="col p-1">
+                Only one email and phone should be added to cart.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1">
+                <input type="text" class="form-control" id="phone" placeholder="Phone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1 d-flex justify-content-center">
+                <a class="btn btn-primary btn-sm" href="javascript:;" id="addItemToCart" 
+                onClick="javascript: processContact();" role="button">Add Contact Details</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+    <p><br/><b>Please note that your transaction is not complete until you check out using the "Checkout via PayPal" link at the bottom of the page.</b></p>
+  <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+    <div class="card">
+      <h5 class="card-header">Step 4 of 4: Checkout</h5>
+      <div class="card-body">
+        <div class="cartdetails_lbl" id="checkout">Shopping Cart Details:</div>
+        <div class="simpleCart_items"></div>
+        <div class="simpleCartTotal_parent">
+        Total: <span class="simpleCart_total"></span>
+        </div>
+        <a href="javascript:;" class="simpleCart_checkout">Checkout via PayPal</a>
+        <a href="javascript:;" class="simpleCart_empty">Clear Cart</a>
         </div>
       </div>
     </div>
@@ -425,24 +544,16 @@ function processItem() {
         item['PickedDate'] = $('#pickedDate').val();
       }
 
-      if ($('#altemail').val().length > 0) {
-        item['alternate-email'] = $('#altemail').val();
-      }
-
-      if ($('#altphone').val().length > 0) {
-        item['alternate-phone'] = $('#altphone').val();
-      }
-
-      // Add date-added-to-cart
-      item['date-added-to-cart'] = moment().format('YYYYMMDD');
-
       if ($('#instructions1').val().length > 0) {
         item['Comment'] = $('#instructions1').val();
       }
 
+      // Add date-added-to-cart
+      item['dateaddedtocart'] = moment().format('YYYYMMDD');
+
       simpleCart.add(item);
       
-      displayNotice = 'Redirecting you to paypal in a few seconds to complete payment!';    
+      displayNotice = 'Item has been added to the cart below!';    
       new Noty({
         theme: 'sunset',
         text: displayNotice,
@@ -458,10 +569,133 @@ function processItem() {
       $('#serviceList').val('0');
       $('#deity').val('0');
       $('#fullName').focus();
-      setTimeout(function(){ simpleCart.checkout(); }, 2000);
     }
     
   }
+}
+
+function processFamily() {
+  if ($('#fullName').val().length == 0) {
+    new Noty({
+      theme: 'sunset',
+      text: 'Please enter a valid user name',
+      type: 'error',
+      layout: 'center',
+      timeout: 1500,
+      animation: {
+        open: 'animated bounceInDown', // Animate.css class names
+        close: 'animated bounceOutUp' // Animate.css class names
+      },
+    }).show();
+    $('#fullName').focus();
+  } 
+  else 
+  {
+    u = $('#fullName').val();
+
+    d = $('#fullName').val();
+    if ($('#naksha').val() != '-'){
+      d = d + ' / ' + $('#naksha').val();
+    }
+    if ($('#raasi').val() != '-'){
+      d = d + ' / ' + $('#raasi').val();
+    }
+    if ($('#gothram').val().length > 0){
+      d = d + ' / ' + $('#gothram').val();
+    }
+    
+    cart = {};
+    cart['price'] = 0;
+    if (u.length > 0){
+      cart['name'] = u;
+    }
+    if (d.length > 0) {
+      cart['Detail'] = d;
+    }
+    cart['dateaddedtocart'] = moment().format('YYYYMMDD');
+    removeFamilyDetailsWithSameName(u);
+    simpleCart.add(cart);
+
+    $('#fullName').val('');
+    $('#naksha').val('-');
+    $('#raasi').val('-');
+    $('#gothram').val('');
+    displayNotice = 'Family member details has been added to cart below!';    
+    new Noty({
+      theme: 'sunset',
+      text: displayNotice,
+      type: 'alert',
+      layout: 'center',
+      timeout: 1500,
+      animation: {
+        open: 'animated bounceInUp', // Animate.css class names
+        close: 'animated bounceOutDown' // Animate.css class names
+      },
+    }).show();
+    $('#fullName').focus();
+  }  
+}
+
+function processContact() {
+  c = '';
+  if ($('#email').val().length > 0) {
+    c = c + '' + $('#email').val() + ';';
+  }
+  if ($('#phone').val().length > 0) {
+    c = c +  '' + $('#phone').val() + '';
+  }
+  
+  cart = {};
+  cart['price'] = 0;
+  if (c.length > 0){
+    cart['name'] = "CONTACT-DETAILS :: "+c;
+  }
+  if (c.length > 0) {
+    cart['ContactInfo'] = c;
+  }
+  cart['dateaddedtocart'] = moment().format('YYYYMMDD');
+  removeAllOtherContactDetails();
+  simpleCart.add(cart);
+
+  $('#email').val('');
+  $('#phone').val('');
+  displayNotice = 'Contact detail has been added to cart below!';    
+  new Noty({
+    theme: 'sunset',
+    text: displayNotice,
+    type: 'alert',
+    layout: 'center',
+    timeout: 1500,
+    animation: {
+      open: 'animated bounceInUp', // Animate.css class names
+      close: 'animated bounceOutDown' // Animate.css class names
+    },
+  }).show();
+  $('#checkout').focus();
+}
+
+function removeAllOtherContactDetails() {
+  simpleCart.each(function(item){
+    // if (item.get('dateaddedtocart') === undefined) {
+    //   item.remove(); 
+    // }
+    // cart['dateaddedtocart'] = moment().format('YYYYMMDD');
+    if (item.get('name') !=  undefined && item.get('name').indexOf('CONTACT-DETAILS') > -1) {
+      item.remove(); 
+    }
+  });
+}
+
+function removeFamilyDetailsWithSameName(name) {
+  simpleCart.each(function(item){
+    // if (item.get('dateaddedtocart') === undefined) {
+    //   item.remove(); 
+    // }
+    // cart['dateaddedtocart'] = moment().format('YYYYMMDD');
+    if (item.get('name') !=  undefined && item.get('name') == name) {
+      item.remove(); 
+    }
+  });
 }
 
 jQuery(document).ready(function($) {
