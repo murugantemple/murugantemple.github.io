@@ -1,5 +1,10 @@
 [
 	{
+		"filename": "04_arohara-web.jpg",
+		"link": "/events/arohara/",
+		"target": "_self"
+	},
+	{
 		"filename": "10_thiruvembavai_web.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
