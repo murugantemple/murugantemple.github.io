@@ -330,11 +330,11 @@
             <div class="row">
               <div class="col p-1">
                 <textarea class="form-control item_instr" 
-                  id="instructions1" rows="3" placeholder="Other Details (140 character limit)"
-                  onKeyDown="textCounter(this,'q17length',140);"
-                  onKeyUp="textCounter(this,'q17length',140);"
+                  id="instructions1" rows="3" placeholder="Other Details (160 character limit)"
+                  onKeyDown="textCounter(this,'q17length',160);"
+                  onKeyUp="textCounter(this,'q17length',160);"
                   ></textarea>
-                  <span id='q17length' name="q17length">&nbsp;(Maximum: 140 chars)</span>
+                  <span id='q17length' name="q17length">&nbsp;(Maximum: 160 chars)</span>
               </div>
             </div>
             <div class="row">
@@ -429,7 +429,7 @@ function processItem() {
     }).show();
     $('#serviceList').focus();
   }
-  else if ($('#instructions1').val().length > 140){
+  else if ($('#instructions1').val().length > 160){
     //alert("Please choose a service");
     new Noty({
       theme: 'sunset',
