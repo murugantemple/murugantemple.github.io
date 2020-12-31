@@ -330,13 +330,22 @@
             <div class="row">
               <div class="col p-1">
                 <textarea class="form-control item_instr" 
-                  id="instructions1" rows="3" placeholder="Other Details (140 character limit)"></textarea>
+                  id="instructions1" rows="3" placeholder="Other Details (140 character limit)"
+                  onKeyDown="textCounter(this,'q17length',140);"
+                  onKeyUp="textCounter(this,'q17length',140);"
+                  ></textarea>
+                  <span id='q17length' name="q17length">&nbsp;(Maximum: 140 chars)</span>
               </div>
             </div>
             <div class="row">
               <div class="col p-1 d-flex justify-content-center">
                 <a class="btn btn-primary btn-sm" href="javascript:;" id="addItemToCart" 
                 onClick="javascript: processItem();" role="button">Checkout With PayPal</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col p-1 d-flex justify-content-center">
+                If you would like to send additional details, please send an email to &nbsp;<a href="mail&#116;o&#58;conta&#99;%74us%40mu%7&#50;&#117;gan&#37;&#55;4&#37;65mp&#108;e&#46;&#111;rg?subject=Additional PayPal Details for">con&#116;&#97;&#99;tus&#64;&#109;urug&#97;nt&#101;&#109;ple&#46;or&#103;</a>  
               </div>
             </div>
             <div class="row">
@@ -387,6 +396,19 @@ function loadInitialCart() {
 }
 </script>
 <script type="text/javascript">
+function textCounter(field, cnt, maxlimit) {         
+  var cntfield = document.getElementById(cnt)   
+  if (field.value.length > maxlimit) // if too long...trim it!
+    field.value = field.value.substring(0, maxlimit);
+    // otherwise, update 'characters left' counter
+  else {
+    while( cntfield.firstChild ) {
+      cntfield.removeChild( cntfield.firstChild );
+    }
+    message = '(Maximum: ' + maxlimit + ' chars / Remaining: ' + (maxlimit - field.value.length) + ' chars)';
+    cntfield.appendChild(document.createTextNode(message));
+  }
+}
 function processItem() {
   selOption = $('#serviceList').val();
   skipAdd = true;
@@ -404,6 +426,21 @@ function processItem() {
       },
     }).show();
     $('#serviceList').focus();
+  }
+  else if ($('#instructions1').val().length > 140){
+    //alert("Please choose a service");
+    new Noty({
+      theme: 'sunset',
+      text: 'Your other details exceeds 140 characters. Please shorten the field and use "contactus@murugantemple.org" to send us the additional details.',
+      type: 'error',
+      layout: 'center',
+      timeout: 1500,
+      animation: {
+        open: 'animated bounceInDown', // Animate.css class names
+        close: 'animated bounceOutUp' // Animate.css class names
+      },
+    }).show();
+    $('#instructions1').focus();
   }
   else {
     eleItems = selOption.split(',');
