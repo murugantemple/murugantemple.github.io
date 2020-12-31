@@ -405,8 +405,10 @@ function textCounter(field, cnt, maxlimit) {
     while( cntfield.firstChild ) {
       cntfield.removeChild( cntfield.firstChild );
     }
-    message = '(Maximum: ' + maxlimit + ' chars / Remaining: ' + (maxlimit - field.value.length) + ' chars)';
-    cntfield.appendChild(document.createTextNode(message));
+    message = '(Maximum: <b>' + maxlimit + '</b> chars / Remaining: <b>' + (maxlimit - field.value.length) + '</b> chars)';
+    //cntfield.appendChild(document.createTextNode(message));
+    cntfield.innerHTML = message;
+
   }
 }
 function processItem() {
