@@ -243,6 +243,271 @@
 	</div>
 </div>
 <p>COVID Relief Page</p>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+	<b>At Murugan Temple, you can make a donation towards one or more of the following projects. All contributions/donations are fully tax deductable. Please add the items to the cart and then check-out the cart when you're ready to proceed to the payment screen. Thank you.</b>
+	<hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<b>List of Projects</b>
+  </div>
+ </div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+<div class="row simpleCart_shelfItem">
+  <div class="col-lg-6" align="center">
+	<div class="projTitle align-middle item_name">Covid Relief Fund</div>
+  </div>
+  <div class="col-lg-4 align-middle">
+  	<div class="pricediv">Amount: $<input type="text" value="0" class="item_price" style="width: 100px;"></div>
+  </div>
+  <div class="col-lg-2 align-middle">
+	<a class="btn btn-success item_add" href="javascript:;" role="button">Add to Cart</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+<div class="row simpleCart_shelfItem">
+  <div class="col-lg-6" align="center">
+	<div class="projTitle align-middle item_name">Silver Kavasam Project (for Navagraham)</div>
+	<div class="projDesc align-middle">Total Project Cost: $15,000</div>
+  </div>
+  <div class="col-lg-4 align-middle">
+  	<div class="pricediv">Amount: $<input type="text" value="0" class="item_price" style="width: 100px;"></div>
+  </div>
+  <div class="col-lg-2 align-middle">
+	<a class="btn btn-success item_add" href="javascript:;" role="button">Add to Cart</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<div class="row">
+	  <div class="col-lg-12" align="center">
+		<div class="cartdetails_lbl">Shopping Cart Details:</div>
+	  </div>
+	</div>
+	<div class="row">
+	 	<div class="col-lg-12 simpleCart_items mx-auto">
+	 	</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 mx-auto" align="center">
+			<div class="simpleCartTotal_parent">
+			Total: <span class="simpleCart_total"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-12" align="center">
+		<a href="javascript:;" class="simpleCart_checkout btn btn-success">Checkout via PayPal</a>
+		<a href="javascript:;" class="simpleCart_empty btn btn-warning">Clear Cart</a>
+	  </div>
+	</div>
+  </div>
+</div>
+<script src="/simplecartjs/simpleCart.min.js"></script>
+<script>
+simpleCart({
+	checkout: { 
+		type: "PayPal" , 
+		email: "finance@murugantemple.org" 
+	},
+	currency: 	"USD"
+});
+</script>
+<style>
+.card-header {
+  background: #b5b1aa;
+  font-size: 18px;
+  font-weight: bold;
+  color: #21214a;
+}
+
+.card-body {
+  background: #f2ecec;
+}
+
+/* CARD DETAILS */
+
+/* SimpleCartJS Formatting */
+/*.simpleCart_items table {
+  width:100%;
+}
+
+.simpleCart_items div div.headerRow div[class*="item-"] {
+  float:left;
+  width: 20%;
+}
+
+.simpleCart_items div div.itemRow div[class*="item-"] {
+  float:left;
+  width: 20%;
+}
+*/
+
+.cartdetails_lbl {
+  font-weight: bold;
+}
+
+/* SIMPLE CART STYLE */
+
+.simpleCart_items  {
+  display: table;         
+  width: auto;         
+  /*background-color: #eee;*/         
+  /*border: 1px solid #666666;*/         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+
+.simpleCart_items div div.headerRow {
+  display: table-row;
+  width: auto;
+  clear: both;
+  color: #198029;
+}
+
+.simpleCart_items div div.itemRow {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+
+
+.simpleCart_items div div.headerRow div[class*="item-"] {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 100px;       
+  /*background-color: #ccc;*/
+}
+
+.simpleCart_items div div.itemRow div[class*="item-"] {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 100px;       
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.simpleCart_items div div.headerRow div.item-name {        
+  width: 400px;
+}
+
+.simpleCart_items div div.itemRow div.item-name {
+  width: 400px;
+}
+
+.simpleCart_items div div.headerRow div.item-date {
+  width: 100px;
+}
+
+.simpleCart_items div div.itemRow div.item-date {
+  width: 100px;
+  min-width: 100px;
+  display: list-item;
+}
+
+.simpleCart_items div div.headerRow div.item-price {
+  width: 80px;
+}
+
+.simpleCart_items div div.itemRow div.item-price {
+  width: 80px;
+}
+
+.simpleCart_items div div.headerRow div.item-quantity {
+  margin-left: 10px;
+  min-width: 48px;
+}
+
+.simpleCart_items div div.itemRow div.item-quantity {
+  width: 80px;
+}
+
+.simpleCart_items div div.headerRow div.item-total {
+  width: 100px;
+  padding-left: 10px;
+}
+
+.simpleCart_items div div.itemRow div.item-total {
+  width: 100px;
+  padding-left: 16px;
+}
+
+.simpleCartTotal_parent {
+  padding-left: 353px;
+  font-weight: bold;
+}
+
+.simpleCart_checkout {
+  margin-left: 352px;
+}
+
+.simpleCart_empty {
+  //display: none;
+}
+
+@media (max-width: 767px) {
+
+  .simpleCart_items div div.headerRow div.item-name {        
+    width: 130px;
+  }
+
+  .simpleCart_items div div.itemRow div.item-name {
+    width: 130px;
+  }
+
+  .simpleCartTotal_parent {
+    padding-left: 45px;
+    font-weight: bold;
+  }
+
+  .simpleCart_checkout {
+    margin-left: 10px;
+  }
+  
+  .item-date, .item-total, .item-quantity, .item-increment, .item-decrement
+  {        
+    display: none !important;
+  }
+
+
+  /*.cartdetails_lbl, .simpleCart_items {
+    display: none;
+  }*/
+
+  .simpleCart_empty {
+    display: none;
+  }
+}
+
+.item-decrement, .item-increment {
+  width: 10px !important;
+}
+.item-quantity {
+  width: 40px !important;
+  text-align: center;
+}
+
+</style>
 <ul class="pa0">
   
 </ul>
