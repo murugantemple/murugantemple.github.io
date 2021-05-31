@@ -1,0 +1,27 @@
+[
+	{
+		"filename": "00_SHM.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "10_thiruvembavai_web.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "20_FederalContributions-web.jpg",
+		"link": "https://cfcgiving.opm.gov/welcome",
+		"target": "_blank"
+	},
+	{
+		"filename": "40_ways_to_give_web.jpg",
+		"link": "/about/about-give/",
+		"target": "_self"
+	},
+	{
+		"filename": "45_VirtualTempleVideo.jpg",
+		"link": "/about/about-virtualtour/",
+		"target": "_self"
+	}
+]
