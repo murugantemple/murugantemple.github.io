@@ -1,10 +1,5 @@
 [
 	{
-		"filename": "00_TC.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},
-	{
 		"filename": "01_AH.jpg",
 		"link": "/about/covid-relief-effort/",
 		"target": "_self"
