@@ -1,6 +1,11 @@
 [
 	{
-		"filename": "00_ad.jpg",
+		"filename": "00_NYBanner.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "01_Calendar.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
 	},
