@@ -1,5 +1,16 @@
 [
 	{
+		"filename": "01_Di.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "02_RY.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+
+	{
 		"filename": "10_thiruvembavai_web.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
