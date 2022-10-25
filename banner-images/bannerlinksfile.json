@@ -1,15 +1,10 @@
 [
 	{
-		"filename": "01_Diw.jpg",
-		"link": "/about/our-cservices/",
-		"target": "_self"
-	},
-	{
-		"filename": "02_RY.jpg",
+		"filename": "01_SS.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
 	},
-
+	
 	{
 		"filename": "10_thiruvembavai_web.jpg",
 		"link": "/about/services-request/",
