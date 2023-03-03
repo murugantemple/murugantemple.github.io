@@ -1,6 +1,11 @@
 [
+{
+		"filename": "01_MM.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
 	{
-		"filename": "01_QR.jpg",
+		"filename": "02_QR.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
 	},
