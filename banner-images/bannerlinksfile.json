@@ -1,6 +1,11 @@
 [
 {
-		"filename": "01_Weekend.jpg",
+		"filename": "00_VV.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "01_AM.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
 	},
