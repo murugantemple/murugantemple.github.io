@@ -1,5 +1,9 @@
 [
-
+	{
+		"filename": "00_BrahmotsavamVideo23.jpg",
+		"link": "/about/about-brahmotsavam/",
+		"target": "_self"
+	},
 	{
 		"filename": "03_QR.jpg",
 		"link": "/about/services-request/",
@@ -28,11 +32,6 @@
 	{
 		"filename": "45_VirtualTempleVideo.jpg",
 		"link": "/about/about-virtualtour/",
-		"target": "_self"
-	},
-	{
-		"filename": "00_BrahmotsavamVideo23.gif",
-		"link": "/about/about-brahmotsavam/",
 		"target": "_self"
 	}
 ]
