@@ -1,16 +1,6 @@
 [
 	{
-		"filename": "00_SE.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},
-	{
 		"filename": "01_LE.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},
-	{
-		"filename": "02_AM.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
 	},
