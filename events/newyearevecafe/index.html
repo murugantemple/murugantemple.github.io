@@ -6,7 +6,7 @@
     <meta name="description" content="Murugan Temple of North America in Lanham, Maryland, USA - (301) 552-4889">
     <meta name="author" content="Venkatt Guhesan">
 
-    <title>Murugan Temple of North America - Events - (301) 552-4889</title>
+    <title>Murugan Temple of North America - Super Singer Junior 2023 - (301) 552-4889</title>
 
     
     <link href="/css/bootstrap.css" rel="stylesheet">
@@ -226,67 +226,389 @@
   </div>
   
   
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 mt-4 mb-4">
-      	<h3>Murugan Temple Upcoming Events:</h3>
-        Below is a list of all upcoming events here at Murugan Temple.
+  <div class="container marketing">
+  	
+  	<div class="row">
+      <div class="col-lg-12">
+      	<h5 class="titlebar">Super Singer Junior 2023</h5>
       </div>
     </div>
-  </div> 
-   <div class="container marketing">
-
-  	
-
-
+    <div class="row">
+      <div class="col-lg-12 pagebodycontent">
 <div class="row">
-    <div class="col-md-12">
-        <h4><a href="http://murugantemple.org/events/temple-calendar-of-events/" class="link black dim">Monthly Calendar Events -2023</a></h4>
-        <span><b>Event Date/Time:</b> </span>
-        <p>Monthly Calendar Events -2023</p>
-    <div>
-    
+  <div class="col-lg-12" align="center">
+    <br>
+	<!--<b>The Audition  Deadline is 10-Oct-2023</b>-->
+  </div>
+</div>
+<!--<div class="row">
+  <div class="col-lg-12" align="left">
+  Please Register using the following link <a href="https://forms.gle/CNTABWJhvNiEYJZ3A">Click Here</a>
+  </div>
+</div>-->
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
-      <hr>
+  <div class="col-lg-12" align="center">
+    <br>
+	<b>FINAL LIVE Competition Auditorium Tickets:</b>
+  </div>
+</div>
+<div class="row simpleCart_shelfItem">
+  <div class="col-lg-12 mx-auto" align="center">
+    <div class="d-flex justify-content-center ">
+      <div class="p-4">
+        <input type="hidden" value="Music event family" id="item_name">
+        <b>Family of 4:</b> $<input type="text" value="50" class="item_price" id="item_price" style="width: 80px;">
+      </div>
+      <div class="p-4">
+        <a href="javascript:;" id="addItemToCart" class="btn btn-primary btn-sm" onClick="javascript: processItem();" role="button">Checkout With PayPal</a>
+      </div>
+    </div>
+	    <div class="d-flex justify-content-center ">
+      <div class="p-4">
+        <input type="hidden" value="Music event individual" id="item_name">
+        <b>Individual:</b> $<input type="text" value="20" class="item_price" id="item_price" style="width: 80px;">
+      </div>
+      <div class="p-4">
+        <a href="javascript:;" id="addItemToCart" class="btn btn-primary btn-sm" onClick="javascript: processItem();" role="button">Checkout With PayPal</a>
+      </div>
+    </div>
+    <!-- <table>
+      <tr>
+        <td align="right"></td>
+        <td align="left"></td>
+      </tr>
+    </table> -->
+  </div>
+</div>
+<!--
+<div class="row">
+  <div class="col-lg-12" align="center">
+  <hr>
+  <a href="https://www.youtube.com/watch?v=GugEt7ohiko" target="_blank" class="btn btn-success btncustom" role="button">Watch Arohara vol 3 Live Concert On YouTube Here</a><br>
+  (make sure to bookmark this for quick access on the day of event)
+  <hr>
+  </div>
+</div>-->
+
+<div class="row">
+  <div class="col-lg-12" align="center">
+  <img src="/img/content/2023/09/02.jpg?rnd=2021-01-15" class="img-fluid rounded float-center p-2" alt="Super Singers 2023"/>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-12" align="left">
+  MTNA wanted to take a moment to thank all of our sponsors.  Your support and partnership play a key role in the success of our event and we appreciate your participation.
   </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <h4><a href="http://murugantemple.org/events/newyearevecafe/" class="link black dim">Super Singer Junior 2023</a></h4>
-        <span><b>Event Date/Time:</b> Sun, Oct. 29th, 2023</span>
-        <p>Super Singer Junior 2023 : Presented By Murugan Temple of North America</p>
-    <div>
+<br>
+
+<script src="/simplecartjs/simpleCart.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+  simpleCart({
+    checkout: { 
+      type: "PayPal" , 
+      email: "finance@murugantemple.org" 
+    },
+    currency:   "USD",
+    cartColumns: [
+      { attr: "name" , label: "Service or Member" },
+      { attr: "date" , label: "Date" },
+      { attr: "price" , label: "Price", view: 'currency' },
+      { view: "decrement" , label: false },
+      { attr: "quantity" , label: "Qty" },
+      { view: "increment" , label: false },
+      { attr: "total" , label: "SubTotal", view: 'currency' },
+      { view: "remove" , text: "Remove" , label: false }
+    ],
+    load: loadInitialCart(),
+  });
+});
+function loadInitialCart() {
+  simpleCart.each(function(item){
+    item.remove(); 
+    console.log("Cleared previous cart items.")
+  });
+}
+</script>
+
+<script type="text/javascript">
+function processItem() {
+  skipAdd = false;
+  name   = $('#item_name').val()
+  amount = $('#item_price').val();
+  if (amount == '0') {
+    new Noty({
+      theme: 'sunset',
+      text: 'Please enter a valid amount.<br>(suggested minimum amount: $20)',
+      type: 'error',
+      layout: 'center',
+      timeout: 1500,
+      animation: {
+        open: 'animated bounceInDown', // Animate.css class names
+        close: 'animated bounceOutUp' // Animate.css class names
+      },
+    }).show();
+    $('#item_price').focus();
+    skipAdd = true;
+  }
+
+  if (skipAdd == false) {
+    item = {
+      name: name,
+      price: amount,
+    };
+    // Add date-added-to-cart
+    item['date-added-to-cart'] = moment().format('YYYYMMDD');
+
+    simpleCart.add(item);
     
-</div>
-<div class="row">
-  <div class="col-md-12">
-      <hr>
-  </div>
-</div>
+    displayNotice = 'Redirecting you to PayPal in a few seconds to complete payment!';    
+    new Noty({
+      theme: 'sunset',
+      text: displayNotice,
+      type: 'alert',
+      layout: 'center',
+      timeout: 1500,
+      animation: {
+        open: 'animated bounceInUp', // Animate.css class names
+        close: 'animated bounceOutDown' // Animate.css class names
+      },
+    }).show();
+    /* reset elements */
+    $('#serviceList').val('0');
+    $('#deity').val('0');
+    $('#fullName').focus();
+    setTimeout(function(){ simpleCart.checkout(); }, 2000);
+  }  
+}
 
-<div class="row">
-    <div class="col-md-12">
-        <h4><a href="http://murugantemple.org/events/mtna-super-singer/" class="link black dim">Super Singer Junior 2023</a></h4>
-        <span><b>Event Date/Time:</b> Sat, Oct. 28th, 2023</span>
-        <p>Super Singer Junior 2023 : Presented By Murugan Temple of North America</p>
-    <div>
-    
+// jQuery(document).ready(function($) {
+//   $('.simpleCart_checkout').addClass('btn').addClass('btn-danger');
+// });
+</script>
+
+<style>
+.btncustom {
+  font-size: 2rem !important;
+}
+
+.card-header {
+  background: #b5b1aa;
+  font-size: 18px;
+  font-weight: bold;
+  color: #21214a;
+}
+
+.card-body {
+  background: #f2ecec;
+}
+
+/* CARD DETAILS */
+
+/* SimpleCartJS Formatting */
+/*.simpleCart_items table {
+  width:100%;
+}
+
+.simpleCart_items div div.headerRow div[class*="item-"] {
+  float:left;
+  width: 20%;
+}
+
+.simpleCart_items div div.itemRow div[class*="item-"] {
+  float:left;
+  width: 20%;
+}
+*/
+
+.cartdetails_lbl {
+  font-weight: bold;
+}
+
+/* SIMPLE CART STYLE */
+
+.simpleCart_items  {
+  display: table;         
+  width: auto;         
+  /*background-color: #eee;*/         
+  /*border: 1px solid #666666;*/         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+
+.simpleCart_items div div.headerRow {
+  display: table-row;
+  width: auto;
+  clear: both;
+  color: #198029;
+}
+
+.simpleCart_items div div.itemRow {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+
+
+.simpleCart_items div div.headerRow div[class*="item-"] {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 100px;       
+  /*background-color: #ccc;*/
+}
+
+.simpleCart_items div div.itemRow div[class*="item-"] {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 100px;       
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.simpleCart_items div div.headerRow div.item-name {        
+  width: 400px;
+}
+
+.simpleCart_items div div.itemRow div.item-name {
+  width: 400px;
+}
+
+.simpleCart_items div div.headerRow div.item-date {
+  width: 100px;
+}
+
+.simpleCart_items div div.itemRow div.item-date {
+  width: 100px;
+  min-width: 100px;
+  display: list-item;
+}
+
+.simpleCart_items div div.headerRow div.item-price {
+  width: 80px;
+}
+
+.simpleCart_items div div.itemRow div.item-price {
+  width: 80px;
+}
+
+.simpleCart_items div div.headerRow div.item-quantity {
+  margin-left: 10px;
+  min-width: 48px;
+}
+
+.simpleCart_items div div.itemRow div.item-quantity {
+  width: 80px;
+}
+
+.simpleCart_items div div.headerRow div.item-total {
+  width: 100px;
+  padding-left: 10px;
+}
+
+.simpleCart_items div div.itemRow div.item-total {
+  width: 100px;
+  padding-left: 16px;
+}
+
+.simpleCartTotal_parent {
+  padding-left: 353px;
+  font-weight: bold;
+}
+
+.simpleCart_checkout {
+  /*margin-left: 352px;*/
+}
+
+
+.simpleCart_empty {
+  //display: none;
+}
+
+@media (max-width: 767px) {
+
+  .simpleCart_items div div.headerRow div.item-name {        
+    width: 130px;
+  }
+
+  .simpleCart_items div div.itemRow div.item-name {
+    width: 130px;
+  }
+
+  .simpleCartTotal_parent {
+    padding-left: 45px;
+    font-weight: bold;
+  }
+
+  .simpleCart_checkout {
+    margin-left: 10px;
+  }
+  
+  .item-date, .item-total, .item-quantity, .item-increment, .item-decrement
+  {        
+    display: none !important;
+  }
+
+
+  /*.cartdetails_lbl, .simpleCart_items {
+    display: none;
+  }*/
+
+  .simpleCart_empty {
+    display: none;
+  }
+}
+
+.item-decrement, .item-increment {
+  width: 10px !important;
+}
+.item-quantity {
+  width: 40px !important;
+  text-align: center;
+}
+
+.item_price {
+  background-color: #ead106 !important;
+}
+
+.btn {
+  line-height: 1;
+}
+</style>
+
+<ul class="pa0">
+  
+</ul>
 </div>
-<div class="row">
-  <div class="col-md-12">
-      <hr>
-  </div>
-</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 pagebodycontent">
+        <time class="f6 mv4 dib tracked" datetime="2023-09-25T00:00:00Z">
+        <b>Last-Updated:</b>&nbsp;September 25, 2023</time>
+        
+      
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+      	
+	    
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+
+
+
 
 </div>
-</div>
-</div>
-</div>
-
+    </div>
   </div>
 
 
