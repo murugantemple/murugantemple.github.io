@@ -8,21 +8,22 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://murugantemple.org/events/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Monthly Calendar Events -2024</title>
+      <link>http://murugantemple.org/events/temple-calendar-of-events/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://murugantemple.org/events/temple-calendar-of-events/</guid>
+      <description>
+ February 2023March 2023April 2023May 2023June 2023July 2023August 2023September 2023October 2023November 2023December 2023--</description>
+    </item>
+    
+    <item>
       <title>Thai Poosam</title>
       <link>http://murugantemple.org/events/thaipoosam/</link>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://murugantemple.org/events/thaipoosam/</guid>
       <description>  --Your browser does not support the video tag.--</description>
-    </item>
-    
-    <item>
-      <title>Monthly Calendar Events -2023</title>
-      <link>http://murugantemple.org/events/temple-calendar-of-events/</link>
-      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://murugantemple.org/events/temple-calendar-of-events/</guid>
-      <description> February 2023March 2023April 2023May 2023June 2023July 2023August 2023September 2023October 2023November 2023December 2023</description>
     </item>
     
   </channel>
