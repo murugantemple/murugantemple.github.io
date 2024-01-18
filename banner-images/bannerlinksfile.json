@@ -1,5 +1,10 @@
 [
 	{
+		"filename": "00_M.jpg",
+		"link": "/about/about-give/",
+		"target": "_self"
+	},
+	{
 		"filename": "01_TP.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
