@@ -1,25 +1,5 @@
 [
 	{
-		"filename": "00_J.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},	
-	{
-		"filename": "01_BM.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},	
-	{
-		"filename": "02_BM.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},		
-	{
-		"filename": "03_BM.jpg",
-		"link": "/about/services-request/",
-		"target": "_self"
-	},
-	{
 		"filename": "10_BrahmotsavamVideo23.jpg",
 		"link": "/about/about-brahmotsavam/",
 		"target": "_self"
