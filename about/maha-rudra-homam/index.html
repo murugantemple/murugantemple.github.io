@@ -259,8 +259,8 @@
 </div>
 
 <div class="row simpleCart_shelfItem">
-<div class="col-lg-3" align="center">Family Name</div>
-  <div class="col-lg-3" align="center">
+<div>Family Name</div>
+  <div class="col-lg-6" align="center">
 	<div class="projTitle align-middle item_name">General Donation</div>
   </div>
   <div class="col-lg-4 align-middle">
@@ -278,8 +278,8 @@
 </div>
 
 <div class="row simpleCart_shelfItem">
-<div class="col-lg-3" align="center">Family Name</div>
-  <div class="col-lg-3" align="center">
+<div>Family Name</div>
+  <div class="col-lg-6" align="center">
 	<div class="projTitle align-middle item_name">Temple Renovation</div>
 	<div class="projDesc align-middle">Total Project Cost: $100,000</div>
   </div>
@@ -291,6 +291,70 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+
+<div class="row simpleCart_shelfItem">
+  <div>Family Name</div>
+  <div class="col-lg-6" align="center">
+	<div class="projTitle align-middle item_name">Replacement of Elevator - Project</div>
+	<div class="projDesc align-middle">Total Project Cost: $125,000</div>
+  </div>
+  <div class="col-lg-4 align-middle">
+  	<div class="pricediv">Amount: $<input type="text" value="0" class="item_price" style="width: 100px;"></div>
+  </div>
+  <div class="col-lg-2 align-middle">
+	<a class="btn btn-success item_add" href="javascript:;" role="button">Add to Cart</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+
+<div class="row simpleCart_shelfItem">
+<div>Family Name</div>
+  <div class="col-lg-6" align="center">
+	<div class="projTitle align-middle item_name">Preservation of the Raja Gopuram Entrance</div>
+	<div class="projDesc align-middle">Total Project Cost: $200,000</div>
+  </div>
+  <div class="col-lg-4 align-middle">
+  	<div class="pricediv">Amount: $<input type="text" value="0" class="item_price" style="width: 100px;"></div>
+  </div>
+  <div class="col-lg-2 align-middle">
+	<a class="btn btn-success item_add" href="javascript:;" role="button">Add to Cart</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
+
+<div class="row simpleCart_shelfItem">
+<div>Family Name</div>
+  <div class="col-lg-6" align="center">
+	<div class="projTitle align-middle item_name">Silver Mayil Vahanam Project</div>
+	<div class="projDesc align-middle">Total Project Cost: $100,000</div>
+  </div>
+  <div class="col-lg-4 align-middle">
+  	<div class="pricediv">Amount: $<input type="text" value="0" class="item_price" style="width: 100px;"></div>
+  </div>
+  <div class="col-lg-2 align-middle">
+	<a class="btn btn-success item_add" href="javascript:;" role="button">Add to Cart</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12" align="center">
+	<hr>
+  </div>
+</div>
 
 <div class="row">
   <div class="col-lg-12" align="center">
@@ -711,92 +775,6 @@ $( document ).ready(function() {
   
   var width = $('.justified').width();
   $('.justified').css('margin-left', '-' + (width / 2)+'px');
-  
-});
-$( window ).resize(function() {
-  
-  var width = $('.justified').width();
-  var factor = 2;
-  var result = width / factor;
-  $('.justified').css('margin-left', '-' + result +'px');
-  
-});
-</script>
-<script>
-$( document ).ready(function() {
-  var scrollpos = window.scrollY;
-  var componentToFix = document.getElementById("navheader");
-  var windowheight = window.innerHeight;
-  var headerheight = document.getElementById("headerbar").offsetHeight;
-
-  function add_class_on_scroll() {
-    componentToFix.classList.add("fixed-top");
-  }
-
-  function remove_class_on_scroll() {
-    componentToFix.classList.remove("fixed-top");
-  }
-
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-    if (scrollpos > (windowheight - headerheight)) {
-      add_class_on_scroll();
-    } else {
-      remove_class_on_scroll();
-    }
-  });
-  });
-  </script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-    $('.calendarthubmnails').magnificPopup({
-      delegate: 'a', 
-      type: 'image',
-      gallery:{
-        enabled:true
-      },
-      
-    });
-  });  
-</script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-    $('#slickslider1').slick({
-      vertical: false ,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      speed: 300
-    });
-  });
-</script>
-
-<script type="text/javascript">
-if (location.protocol != 'https:' && (location.hostname.indexOf("localhost") == -1 && location.hostname.indexOf("0.0.0.0") == -1) )
-{
-     var rndNum = Math.floor(Math.random() * 100000);
-     location.href = 'https:' + window.location.href.substring(window.location.protocol.length) + '?rnd=' + rndNum;
-}
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (window.location.href.indexOf("https://murugantemple.org//") > -1) {
-      location.href = 'https://murugantemple.org/'
-    }
-  });
-</script>
-
-
-
-
-
-
-</body>
-</html>
-
-in-left', '-' + (width / 2)+'px');
   
 });
 $( window ).resize(function() {
