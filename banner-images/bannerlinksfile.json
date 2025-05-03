@@ -1,6 +1,16 @@
 [
 	{
-		"filename": "01_MS.jpg",
+		"filename": "01_CP.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "02_GP.jpg",
+		"link": "/about/services-request/",
+		"target": "_self"
+	},
+	{
+		"filename": "03_RKP.jpg",
 		"link": "/about/services-request/",
 		"target": "_self"
 	},
