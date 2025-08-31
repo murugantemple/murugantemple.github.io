@@ -1,5 +1,10 @@
 [
 	{
+		"filename": "00_CC.jpg",
+		"link": "/events/thear/",
+		"target": "_self"
+	},
+	{
 		"filename": "01_MU.jpg",
 		"link": "/events/thear/",
 		"target": "_self"
