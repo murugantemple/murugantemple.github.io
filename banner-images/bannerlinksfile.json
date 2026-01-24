@@ -1,5 +1,10 @@
 [
 	{
+		"filename": "01_JC.jpg",
+		"link": "/about/services-request/",
+		"target": "_blank"
+	},
+	{
 		"filename": "10_BrahmotsavamVideo23.jpg",
 		"link": "/about/about-brahmotsavam/",
 		"target": "_self"
