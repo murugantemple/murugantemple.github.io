@@ -1,6 +1,11 @@
 [
 	{
-		"filename": "01_JC.jpg",
+		"filename": "01_TP.jpg",
+		"link": "/about/services-request/",
+		"target": "_blank"
+	},
+	{
+		"filename": "02_TP.jpg",
 		"link": "/about/services-request/",
 		"target": "_blank"
 	},
